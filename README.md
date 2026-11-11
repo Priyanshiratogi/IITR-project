@@ -1,40 +1,47 @@
-# Memory Game
+# Childhood Browser Games
 
-A responsive and accessible Memory (Concentration) card game built with HTML, CSS, and JavaScript.
+A small collection of responsive, self-contained games built with HTML, CSS, and JavaScript. No installation, build step, external libraries, or network connection is required.
 
-## Features
+## Games
 
-- 4x4 and 6x6 grid options
-- Smooth card flip animations
-- Timer and moves counter
-- Star rating system
-- Local storage for best scores
-- Keyboard controls for accessibility
-- Responsive design for all devices
-- No external dependencies
+### Memory Game
 
-## How to Play
+Open [`memory-game.html`](./memory-game.html) in a browser to match pairs of cards.
 
-1. Open `memory-game.html` in a web browser
-2. Click or use keyboard (Tab + Enter/Space) to flip cards
-3. Find matching pairs to win
-4. Try to complete the game with as few moves as possible
-5. Switch between 4x4 and 6x6 grids using the buttons
+- Play on 4x4 or 6x6 grids.
+- Track moves, elapsed time, and a star rating.
+- Save the five best scores in browser local storage.
+- Play with a mouse or keyboard.
 
-## Technical Details
+### Word Search
 
-- Pure HTML, CSS, and JavaScript implementation
-- No external libraries or dependencies
-- Fully responsive design using CSS Grid
-- Accessible with ARIA attributes and keyboard controls
-- Local storage for persistent high scores
+Open [`word-search.html`](./word-search.html) in a browser to find hidden words in a letter grid.
 
-## Development
+- Choose Animals, Nature, or Space word themes.
+- Choose Easy (10x10, 8 words) or Challenge (12x12, 12 words).
+- Find words horizontally, vertically, or diagonally, forwards or backwards.
+- Select words by dragging, clicking endpoints, or using the keyboard.
+- Track found words and elapsed time.
 
-1. Clone the repository
-2. Open `memory-game.html` in a web browser
-3. Or serve using a local HTTP server:
-   ```bash
-   python3 -m http.server 8000
-   ```
-4. Visit `http://localhost:8000/memory-game.html`
+See the [Word Search PRD](./PRD_word_search.md) for its product requirements and verification checklist.
+
+## Run locally
+
+The simplest way to play is to open either HTML file directly in a modern browser. Alternatively, from this folder, run a local server:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open:
+
+- `http://localhost:8000/memory-game.html`
+- `http://localhost:8000/word-search.html`
+
+## Project files
+
+- `memory-game.html` - Memory game, including its styles and game logic.
+- `word-search.html` - Word Search game, including its styles, word lists, and game logic.
+- `PRD_word_search.md` - Word Search feature requirements and acceptance checklist.
+
+Both games are standalone HTML files and require no dependencies.
